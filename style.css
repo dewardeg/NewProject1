@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100;200;300;400;500;600;700;800;900&display=swap');
 .navbar .navbar-collapse {
     text-align: center;
+}
+.nav-link {
+    font-family: 'Lexend Exa', sans-serif;
 }
