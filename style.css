@@ -5,3 +5,17 @@
 .nav-link {
     font-family: 'Lexend Exa', sans-serif;
 }
+.carousel,.item,.active {
+    height:100%;
+    width: 100%;
+}
+.carousel-inner {
+     height:100%;
+     width: 100%;
+}
+#carouselfullwidth {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
