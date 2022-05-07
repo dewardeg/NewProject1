@@ -14,6 +14,16 @@ body {
 .navbar .navbar-collapse {
     text-align:right;
 }
+@media only screen and (max-width: 940px) {
+    .nav-link {
+        font-size: 1.50vw;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .nav-link {
+        font-size: 2.90vw;
+    }
+}
 .nav-link {
     font-family: 'Lexend Exa', sans-serif;
 }
@@ -34,6 +44,21 @@ body {
     border-width: 0.05em;
     border-color: rgba(255, 255, 255, 0.25);
     border-radius: 0.25rem;
+}
+.navbar-toggler {
+    position: relative;
+    top: 60px;
+    margin-right: 1%;
+}
+@media only screen and (max-width: 940px) {
+    .card {
+        font-size: 2.50vw;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .card {
+        font-size: 2.65vw;
+    }
 }
 .card {
     font-family: 'Lexend Exa', sans-serif;
