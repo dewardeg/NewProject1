@@ -59,24 +59,28 @@
         </div>
     </nav>
     <!-- Contact Form -->
-    <div class="container-fluid position-absolute" style="right: 2%; bottom: 5vw; width: 30vw;">
-        <div class="mb-2" style="max-width: 30vw; text-align: right;">
-            <label for="nameinput" class="form-label">Adı Soyadı</label>
-            <input type="text" class="form-control" id="nameinput" placeholder="Adınız & Soyadınız">
+    <div class="container-fluid position-absolute" id="confrm" style="right: 2%; bottom: 5vw; width: 30vw;">
+        <div class="contact-form">
+            <form class="contact-form has-validation" style="font-size: 1vw;">
+                <div class="inp1 mb-2" style="max-width: 30vw; text-align: right; min-width: 300px;">
+                    <label for="nameinput" class="form-label">Adı Soyadı</label>
+                    <input type="text" class="form-control" id="nameinput" placeholder="Adınız & Soyadınız" required>
+                </div>
+                <div class="inp1 mb-2" style="max-width: 30vw; text-align: right;min-width: 300px;">
+                    <label for="emailinput" class="form-label">Email Adresi</label>
+                    <input type="email" class="form-control" id="emailinput" placeholder="Eposta Adresiniz" required>
+                </div>
+                <div class="inp1 mb-2" style="max-width: 30vw; text-align: right;min-width: 300px;">
+                    <label for="telinput" class="form-label">Telefon No</label>
+                    <input type="tel" class="form-control" id="telinput" placeholder="Cep Telefonu Numaranız" maxlength="10" minlength="10" required>
+                </div>
+                <div class="inp1 mb-2" style="max-width: 30vw; text-align: right;min-width: 300px;">
+                    <label for="textinput" class="form-label">Mesaj</label>
+                    <textarea class="form-control" placeholder="Mesajınızı buraya yazınız." id="textinput" rows="4" cols="2" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" id="sendbtn" style="color: rgba(255, 255, 255, 0.750); background-color: transparent; border-color:rgba(255, 255, 255, 0.16);">Gönder</button>
+            </form>
         </div>
-        <div class="mb-2" style="max-width: 30vw; text-align: right;">
-            <label for="emailinput" class="form-label">Email Adresi</label>
-            <input type="email" class="form-control" id="emailinput" placeholder="Eposta Adresiniz">
-        </div>
-        <div class="mb-2" style="max-width: 30vw; text-align: right;">
-            <label for="telinput" class="form-label">Telefon No</label>
-            <input type="tel" class="form-control" id="telinput" placeholder="Cep Telefonu Numaranız" maxlength="10" minlength="10">
-        </div>
-        <div class="mb-2" style="max-width: 30vw; text-align: right;">
-            <label for="textinpput" class="form-label">Mesaj</label>
-            <textarea class="form-control" placeholder="Mesajınızı buraya yazınız." id="textinput" rows="4" cols="2"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary" id="sendbtn" style="color: rgba(255, 255, 255, 0.750); background-color: transparent; border-color:rgba(255, 255, 255, 0.16);">Gönder</button>
     </div>
 
 </body>

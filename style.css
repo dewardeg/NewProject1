@@ -18,6 +18,14 @@ body {
 .navbar .navbar-collapse {
     text-align:right;
 }
+/* Logo */
+.logo {
+    position: absolute; 
+    top:63px; 
+    left: 5%; 
+    max-width: 15.7vw; 
+    min-width: 150px;
+}
 /* Mobile Menu Settings Start */
 @media only screen and (max-width: 940px) {
     .nav-link {
@@ -26,10 +34,35 @@ body {
 }
 @media only screen and (max-width: 767px) {
     .nav-link {
-        font-size: 2.90vw;
+        font-size: 3.00vw;
     }
 }
-/* Mobile Menu Settings End */
+.navbar-nav {
+    position: absolute; 
+    top: 330%; 
+    right:32px;
+}
+/* Mobile Menu Settings Ends */
+/* Main Page Card Item Starts*/
+.card.text-end.position-absolute {
+    width: 16rem; 
+    background-color: transparent; 
+    border-color: rgba(255, 255, 255, 0.255); 
+    bottom: 5%; 
+    right: 3%;
+}
+h5.card-title { 
+    color: rgb(255, 255, 255);
+}
+p.card-text {
+    color: rgba(238, 238, 238, 0.50);
+}
+#iletisimbtn {
+    color: rgba(255, 255, 255, 0.750); 
+    background-color: transparent; 
+    border-color:rgba(255, 255, 255, 0.16);
+}
+/* Main Page Card Item Ends*/
 /* Menu Hover & Focus */
 .navbar-dark .navbar-nav .nav-link:hover, 
 .navbar-dark .navbar-nav .nav-link:focus {
@@ -57,16 +90,16 @@ body {
 /* Main page card mobile settings starts */
 @media only screen and (max-width: 940px) {
     .card {
-        font-size: 2.50vw;
+        font-size: 1.50vw;
     }
 }
 @media only screen and (max-width: 767px) {
     .card {
-        font-size: 2.65vw;
+        font-size: calc(0.6rem);
     }
 }
 /* Main page card mobile settings ends */
-
+/* Button General Settings */
 .btn.btn-primary {
 	color: #FFF;
 	transition: all 0.3s;
@@ -125,11 +158,4 @@ body {
 .form-label {
     font-family: 'Lexend Exa', sans-serif;
     color: rgba(255, 255, 255, 0.75);
-}
-input:invalid {
-    outline: 2px solid red;
-}
-input:focus:invalid {
-    outline: 2px solid red;
-    color: red;
 }
